@@ -1,0 +1,24 @@
+---
+import ContactForm from '../components/ContactForm';
+import '../styles/global.css';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OptimaX — Landing</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center p-6">
+    <main class="w-full max-w-4xl">
+      <header class="text-center mb-8">
+        <h1 class="text-3xl font-bold">OptimaX</h1>
+        <p className="text-slate-600 mt-2">Fill the form and we will contact you</p>
+      </header>
+
+      <section>
+        <ContactForm client:idle />
+      </section>
+    </main>
+  </body>
+</html>
